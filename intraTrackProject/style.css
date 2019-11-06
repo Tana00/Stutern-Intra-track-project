@@ -60,4 +60,32 @@
 }
 .section2-image img {
   max-width: 240px;
+  background-image: url('2.png');
+}
+.container3 {
+  background: #eefbff;
+  color: #2128bd;
+}
+.backgound-image .image {
+  background-image: url("sprites.png");
+  background-position: -99px 0;
+  background-repeat: repeat-y;
+}
+.e-alarm {
+  background-image: url("sprites.png");
+  background-position: -77px -76px;
+  width: 25px;
+  height: 28px;
+}
+.e-book {
+  background-image: url("sprites.png");
+  background-position: 0 -109px;
+  width: 24px;
+  height: 29px;
+}
+.e-darts {
+  background-image: url("sprites.png");
+  background-position: -48px -76px;
+  width: 28px;
+  height: 28px;
 }
