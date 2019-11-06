@@ -35,10 +35,23 @@
     </div>
     <div class="container container2">
       <div class="row section2">
-        <div class="col section2-image">
-          <img src="" alt="" />
+        <div class="col-sm-12 col-md-6 section2-image">
+          <div class="parent">
+            <img
+              class="image1"
+              src="https://res.cloudinary.com/cdacs/image/upload/v1572468592/Wickret%20Assets/1/clouds_wulspr.png"
+            />
+            <img
+              class="image2"
+              src="https://res.cloudinary.com/cdacs/image/upload/v1572468592/Wickret%20Assets/1/model_yacibg.png"
+            />
+            <img
+              class="image3"
+              src="https://res.cloudinary.com/cdacs/image/upload/v1572468592/Wickret%20Assets/1/particles-1_e7rtcs.png"
+            />
+          </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6 description">
           <h2>Get Paid early</h2>
           <p>
             Your paycheck will be automatically deposited up to two days early
@@ -69,22 +82,37 @@
           <span></span>
         </div>
 
-        <h1>
+        <h1 class="h1">
           Customer Service <br />
           on Your Terms
         </h1>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-6"></div>
           <div class="col-6">
-            <div>
+            <img
+              id="imgSrc"
+              src="https://res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png"
+            />
+          </div>
+          <div class="col-6">
+            <div
+              class="link"
+              style="display: flex;"
+              onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png')"
+            >
               Real-time alerts <span class="e-alarm"></span> next day settlement
             </div>
-            <div>
+            <div
+              class="link"
+              onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/2_2x_rgwtkv.png')"
+            >
               Flexible billing <span class="e-book"></span> and payments
             </div>
-            <div>
+            <div
+              class="link"
+              onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/3_2x_prguya.png')"
+            >
               Banking for all <span class="e-darts"></span> personal, business
             </div>
           </div>
@@ -107,6 +135,13 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
+
+    <script type="text/javascript">
+      function changeImage(imgName) {
+        image = document.getElementById("imgSrc");
+        image.src = imgName;
+      }
+    </script>
   </body>
 </html>
