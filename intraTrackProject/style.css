@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
+html,
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 .container1 {
   position: absolute;
@@ -61,27 +66,12 @@ body {
   display: flex;
 }
 .section2-image {
-  position: relative;
+  width: 100%;
 }
 .parent {
-  position: relative;
-  top: -5em;
-  left: -14em;
 }
 .image1 {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.image2 {
-  position: absolute;
-  top: 30px;
-  left: 70px;
-}
-.image3 {
-  position: absolute;
-  top: 0px;
-  left: 70px;
+  width: 100%;
 }
 h2 {
   font-size: 30px;
@@ -90,9 +80,9 @@ h2 {
   color: #2128bd;
   font-weight: 700;
 }
-.description {
+/* .description {
   padding-left: 6em;
-}
+} */
 .description p {
   max-width: 416px;
   font-size: 28px;
@@ -138,9 +128,6 @@ h2 {
   width: 28px;
   height: 28px;
 }
-.col-6 img {
-  width: 450px;
-}
 .link {
   font-size: 40px;
   line-height: 54px;
@@ -159,4 +146,17 @@ button {
   color: #005ffe;
   border: 1px rgba(0, 95, 254, 0.3) solid;
   background: white;
+}
+
+@media (max-width: 990px) {
+  .link {
+    font-size: 20px;
+    line-height: 54px;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+    margin: 0.5em 0;
+  }
+  .child h1 {
+    font-size: 1.5rem;
+  }
 }
