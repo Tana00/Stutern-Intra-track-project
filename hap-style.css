@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.container1 {
+	margin: 0;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100vh;
+  height: calc(100vw);
+  overflow: scroll;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: center calc(50vh);
+  transform-origin: center calc(50vh);
+}
+
+.child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #2128bd;
+  font-size: 20px;
+  margin: 10em -4em;
+  padding: 2em;
+  width: 600px;
+  height: 500px;
+  font-weight: 500;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  text-align: center;
+}
+
+.child p {
+  line-height: 1.5;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.container2 {
+  /* -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px); */
+  position: static;
+  max-width: 1200px;
+  margin: 50em auto 0;
+}
+
+.container2 .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10em;
+}
+.section2-image {
+  width: 100%;
+}
+.parent {
+}
+.image1 {
+  width: 100%;
+}
+h2 {
+  font-size: 30px;
+  letter-spacing: -0.48px;
+  line-height: 42px;
+  color: #2128bd;
+  font-weight: 700;
+}
+ .description {
+  padding: 5em 0;
+} 
+.description p {
+  max-width: 416px;
+  font-size: 28px;
+  letter-spacing: -0.48px;
+  line-height: 42px;
+  margin-bottom: 2em;
+  color: #2128bd;
+  font-weight: 400;
+}
+
+.container3 {
+  background: #eefbff;
+  color: #2128bd;
+}
+.backgound-image .image {
+  background-image: url("img/sprites.png");
+  background-position: -99px 0;
+  background-repeat: repeat-y;
+}
+.h1 {
+  display: flex;
+  margin: 2em 0;
+  padding: 4em 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+.e-alarm {
+  background-image: url("img/sprites.png");
+  background-position: -77px -76px;
+  width: 25px;
+  height: 28px;
+}
+.e-book {
+  background-image: url("img/sprites.png");
+  background-position: 0 -109px;
+  width: 24px;
+  height: 29px;
+}
+.e-darts {
+  background-image: url("img/sprites.png");
+  background-position: -48px -76px;
+  width: 28px;
+  height: 28px;
+}
+.link {
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: -0.7px;
+  cursor: pointer;
+  margin: 1em 0;
+}
+.description-items button {
+  height: 60px;
+  padding: 0 39px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  letter-spacing: -0.21px;
+  color: #005ffe;
+  border: 1px rgba(0, 95, 254, 0.3) solid;
+  background: white;
+}
+
+@media (max-width: 990px) {
+  .link {
+    font-size: 20px;
+    line-height: 54px;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+    margin: 0.5em 0;
+  }
+  .child h1 {
+    font-size: 1.5rem;
+  }
+}
