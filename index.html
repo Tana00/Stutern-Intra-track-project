@@ -172,10 +172,34 @@
 
     <section style="display: flex; justify-content: space-around; background: #e1f5fe; padding: 5em 0;">
         <div>
-            <div></div>
+            <div class="image-fixed">
+                <img style="width: 100%;"
+                id="imgSrc"
+                src="https://res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png"
+              />
+            </div>
         </div>
-        <div class="features">
-            <ol>
+        <div class="feature-list">
+                <div
+                class="features"
+                style="display: flex;"
+                onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png')"
+              >
+                Real-time alerts <span class="e-alarm"></span> next day settlement
+              </div>
+              <div
+              class="features"
+                onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/2_2x_rgwtkv.png')"
+              >
+                Flexible billing <span class="e-book"></span> and payments
+              </div>
+              <div
+                class="features"
+                onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/3_2x_prguya.png')"
+              >
+                Banking for all <span class="e-darts"></span> personal, business
+              </div>
+            <!-- <ol>
                 <li>Real-time alerts
                     <br>
                     next day settlement</li>
@@ -185,7 +209,7 @@
                 <li>Banking for all
                     <br>
                     personal, business</li>
-            </ol>
+            </ol> -->
         </div>
     </section>
     <section style="padding: 5em 0">
@@ -271,7 +295,12 @@
 
 <!-- Khalil -->
 
-
+<script type="text/javascript">
+    function changeImage(imgName) {
+      image = document.getElementById("imgSrc");
+      image.src = imgName;
+    }
+  </script>
 
 </body>
 

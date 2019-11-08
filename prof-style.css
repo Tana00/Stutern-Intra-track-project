@@ -1,132 +1,132 @@
-body{
-	margin: 0;
-	padding: 0;
-	font-family: Montserrat, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(238, 238, 238);
-    border-radius: 10px;
+  box-shadow: inset 0 0 5px rgb(238, 238, 238);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2128bd;
-    border-radius: 20px;
-    margin: 3px;
+  background: #2128bd;
+  border-radius: 20px;
+  margin: 3px;
 }
 
 .customer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	padding: 12.5em;
-	margin: 0;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12.5em;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .gem {
-    width: 39px;
-    height: 47px;
-    display: inline-block;
-    background-image: url(https://wickret.cuberto.com/assets/img/sprites/sprites.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+  width: 39px;
+  height: 47px;
+  display: inline-block;
+  background-image: url(https://wickret.cuberto.com/assets/img/sprites/sprites.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 .customer h2 {
-	color: #2128bd;
-    font-size: 4.5em;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -5px;
+  color: #2128bd;
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -5px;
 }
 
-.features ol li {
-	font-size: 2em;
-	font-weight: 600;
-	margin-bottom: 35px;
-	text-shadow: none;
-    -webkit-text-stroke: 1px #0019ac;
-    color: #fff;
-	list-style: none;
-	opacity: 0.2;
-	-webkit-transition: ease-in-out 0.3s;
-	-moz-transition: ease-in-out 0.3s;
-	transition: ease-in-out 0.3s;
+.features {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-shadow: none;
+  -webkit-text-stroke: 1px #0019ac;
+  color: #fff;
+  list-style: none;
+  opacity: 0.2;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  line-height: 55px;
 }
 
-.features ol li:hover {
-	color: #2128bd;
-	opacity: 1;
+.features:hover {
+  color: #2128bd;
+  opacity: 1;
 }
 
 .security-header {
-    margin: 12em 0;
+  margin: 12em 0;
 }
 
 .security-header h2 {
-    color: #2128bd;
-    font-size: 8em;
-    font-weight: 600;
-    letter-spacing: -10px;
-    text-align: center;
+  color: #2128bd;
+  font-size: 8em;
+  font-weight: 600;
+  letter-spacing: -10px;
+  text-align: center;
 }
 
 .security-details div {
-    width: 530px;
-    padding: 0 3em;
+  width: 530px;
+  padding: 0 3em;
 }
 
 .security-details {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 16em 0 5em; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 16em 0 5em;
 }
 
-
 .container-fluid.fees {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    background-color: #FDF0E5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #fdf0e5;
 }
 
 .fees .header {
-    margin: 20em auto;
-    color: #2128bd;
+  margin: 20em auto;
+  color: #2128bd;
 }
 
 .fees .header h2 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 4.5rem;
-    letter-spacing: -6px;
-    line-height: 1.1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4.5rem;
+  letter-spacing: -6px;
+  line-height: 1.1;
 }
 
 .fees .header p {
-    text-align: center;
-    font-size: 1.7em;
-    letter-spacing: -1px;
+  text-align: center;
+  font-size: 1.7em;
+  letter-spacing: -1px;
 }
 
 .randoms {
-    width: 39px;
-    height: 47px;
-    display: inline-block;
-    background-image: url(https://wickret.cuberto.com/assets/img/sprites/sprites.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+  width: 39px;
+  height: 47px;
+  display: inline-block;
+  background-image: url(https://wickret.cuberto.com/assets/img/sprites/sprites.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }

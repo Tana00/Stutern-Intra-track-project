@@ -9,7 +9,7 @@ body {
   padding: 0px;
 }
 .container1 {
-	margin: 0;
+  margin: 0;
   position: absolute;
   top: -30px;
   left: 0;
@@ -81,9 +81,9 @@ h2 {
   color: #2128bd;
   font-weight: 700;
 }
- .description {
+.description {
   padding: 5em 0;
-} 
+}
 .description p {
   max-width: 416px;
   font-size: 28px;
@@ -136,6 +136,14 @@ h2 {
   letter-spacing: -0.7px;
   cursor: pointer;
   margin: 1em 0;
+}
+.feature-list {
+  width: 400px;
+  height: 400px;
+}
+.image-fixed {
+  width: 400px;
+  height: 400px;
 }
 .description-items button {
   height: 60px;
