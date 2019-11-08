@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
-    <script src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+
 </head>
 
 <body class="wow animated fadeIn">
@@ -31,17 +30,24 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="nav right">
+                            <div class="nav right" id="response">
                                 <div class="navigation">
-                                    <div class="benefits"><a href="#">Benefits</a></div>
-                                    <div class="security"><a href="#">Security</a></div>
-
+                                    <div class="benefits">
+                                        <a href="#">Benefits</a>
+                                    </div>
+                                    <div class="security">
+                                        <a href="#">Security</a>
+                                    </div>
                                     <button>
                                         <span id="loop">Download</span>
                                     </button>
-
                                 </div>
                             </div>
+                            <button id="toggle-menu" class="btnn" onclick="toggleBar(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -89,6 +95,22 @@
             <p>Fee Free Banking is possible</p>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.btnn').click(function() {
+            $('.btnn').toggleClass('active');
+            $('.navigation').toggleClass('active');
+          });
+        });
+    </script>
+    <script>
+        function toggleBar(x) {    
+            x.classList.toggle("change");
+        }
+    </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
