@@ -12,10 +12,8 @@
     <link href="hap-style.css" rel="stylesheet" />
     <link href="prof-style.css" rel="stylesheet" />
     <link href="yus-style.css" rel="stylesheet" />
-
+    <!-- <link href="css/normalize.css" rel="stylesheet" /> -->
     <link href="css/animate.css" rel="stylesheet" />
-    <script src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body class="wow animated fadeIn">
@@ -35,17 +33,24 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="nav right">
+                            <div class="nav right" id="response">
                                 <div class="navigation">
-                                    <div class="benefits"><a href="#">Benefits</a></div>
-                                    <div class="security"><a href="#">Security</a></div>
-
+                                    <div class="benefits">
+                                        <a href="#">Benefits</a>
+                                    </div>
+                                    <div class="security">
+                                        <a href="#">Security</a>
+                                    </div>
                                     <button>
                                         <span id="loop">Download</span>
                                     </button>
-
                                 </div>
                             </div>
+                            <button id="toggle-menu" class="btnn" onclick="toggleBar(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -77,129 +82,125 @@
             </div>
         </div>
 
-<section class="container-fluid fees">
-        <div class="wow animated fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
-            <s class="s1" style="background-position: -140px 3px; top: 75%; left: 40%;"></s>
-            <s class="s2" style="background-position: -98px -37px; top: 75%; left: 60%; height: 40px; width: 43px;"></s>
-            <s class="s3" style="background-position: -140px -44px; top: 65%; left: 18%; height: 40px;"></s>
-            <s class="s4" style="background-position: 0px -74px; top: 65%; left: 80%; width: 47px; height: 36px;"></s>
-            <s class="s5" style="background-position: -140px 3px; top: 30%; left: 80%; width: 47px; height: 47px;"></s>
-            <s class="s6" style="background-position: -96px -34px; top: 30%; left: 18%; width: 47px; height: 43px;"></s>
-            <s class="s7" style="background-position: 2px -74px; top: 18%; left: 60%; height: 36px; width: 50px;"></s>
-            <s class="s8" style="background-position: -140px -44px; top: 18%; left: 38%; height: 42px; width: 50px;"></s>
-        </div>
-        <div class="header">
-            <h2>It's Your Money<br>Stop paying fees</h2>
-            <p>Fee Free Banking is possible</p>
-        </div>
-    </section>
-
-
-
-<!-- Happiness -->
-
-    <div class="container-fluid wrapper">
-    <div class="container container1">
-      <div class="content-wrapper">
-        <div class="child">
-          <p>No Monthly Service Fees, Transaction Fee from 0%</p>
-        </div>
-
-        <div class="child">
-          <p>Anonymous, No Chargebacks</p>
-        </div>
-
-        <div class="child">
-          <p>Payment Managment</p>
-        </div>
-
-        <div class="child">
-          <p>Money, Move Money</p>
-        </div>
-      </div>
-    </div>
-    <div class="container container2">
-      <div class="row section2">
-        <div class="col-sm-12 col-md-7 section2-image">
-          <div class="parent">
-            <img
-              class="image1"
-              src="img/clouded-model.png"
-            />
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 description">
-          <div class="description-items">
-          <h2>Get Paid early</h2>
-          <p>
-            Your paycheck will be automatically deposited up to two days early
-          </p>
-          <button>Download</button>
-        </div>
-        </div>
-      </div>
-    </div>
-
-<!-- Happiness -->
-
-
-
-<!-- Calistus -->
-
-<section style="background: #e1f5fe; padding: 5em 0;">
-        <div class="customer">
+        <section class="container-fluid fees">
             <div class="wow animated fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
-                <s class="s1 gem" style="background-position: -100px 10px; top: 90%; left: 40%; width: 42px;"></s>
-                <s class="s2 gem"
-                    style="background-position: -100px 3px; top: 90%; left: 60%; height: 40px; width: 43px;"></s>
-                <s class="s3 gem" style="background-position: -102px 3px; top: 60%; left: 18%; height: 40px;"></s>
-                <s class="s4 gem"
-                    style="background-position: -100px 0px; top: 60%; left: 79%; width: 44px; height: 36px;"></s>
-                <s class="s5 gem"
-                    style="background-position: -100px 10px; top: 20%; left: 79%; width: 44px; height: 47px;"></s>
-                <s class="s6 gem"
-                    style="background-position: -100px 10px; top: 20%; left: 18%; width: 44px; height: 43px;"></s>
-                <s class="s7 gem"
-                    style="background-position: -100px 0px; top: 5%; left: 60%; height: 36px; width: 44px;"></s>
-                <s class="s8 gem"
-                    style="background-position: -100px 4px; top: 5%; left: 38%; height: 42px; width: 44px;"></s>
+                <s class="s1" style="background-position: -140px 3px; top: 75%; left: 40%;"></s>
+                <s class="s2"
+                    style="background-position: -98px -37px; top: 75%; left: 60%; height: 40px; width: 43px;"></s>
+                <s class="s3" style="background-position: -140px -44px; top: 65%; left: 18%; height: 40px;"></s>
+                <s class="s4"
+                    style="background-position: 0px -74px; top: 65%; left: 80%; width: 47px; height: 36px;"></s>
+                <s class="s5"
+                    style="background-position: -140px 3px; top: 30%; left: 80%; width: 47px; height: 47px;"></s>
+                <s class="s6"
+                    style="background-position: -96px -34px; top: 30%; left: 18%; width: 47px; height: 43px;"></s>
+                <s class="s7"
+                    style="background-position: 2px -74px; top: 18%; left: 60%; height: 36px; width: 50px;"></s>
+                <s class="s8"
+                    style="background-position: -140px -44px; top: 18%; left: 38%; height: 42px; width: 50px;"></s>
             </div>
-            <h2>Customer Service
-                <br>
-                on Your Terms</h2>
-        </div>
-    </section>
+            <div class="header">
+                <h2>It's Your Money<br>Stop paying fees</h2>
+                <p>Fee Free Banking is possible</p>
+            </div>
+        </section>
 
-    <section style="display: flex; justify-content: space-around; background: #e1f5fe; padding: 5em 0;">
-        <div>
-            <div class="image-fixed">
-                <img style="width: 100%;"
-                id="imgSrc"
-                src="https://res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png"
-              />
+
+
+        <!-- Happiness -->
+
+        <div class="container-fluid wrapper">
+            <div class="container container1">
+                <div class="content-wrapper">
+                    <div class="child">
+                        <p>No Monthly Service Fees, Transaction Fee from 0%</p>
+                    </div>
+
+                    <div class="child">
+                        <p>Anonymous, No Chargebacks</p>
+                    </div>
+
+                    <div class="child">
+                        <p>Payment Managment</p>
+                    </div>
+
+                    <div class="child">
+                        <p>Money, Move Money</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="feature-list">
-                <div
-                class="features"
-                style="display: flex;"
-                onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png')"
-              >
-                Real-time alerts <span class="e-alarm"></span> next day settlement
-              </div>
-              <div
-              class="features"
-                onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/2_2x_rgwtkv.png')"
-              >
-                Flexible billing <span class="e-book"></span> and payments
-              </div>
-              <div
-                class="features"
-                onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/3_2x_prguya.png')"
-              >
-                Banking for all <span class="e-darts"></span> personal, business
-              </div>
-            <!-- <ol>
+            <div class="container container2">
+                <div class="row section2">
+                    <div class="col-sm-12 col-md-7 section2-image">
+                        <div class="parent">
+                            <img class="image1" src="img/clouded-model.png" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 description">
+                        <div class="description-items">
+                            <h2>Get Paid early</h2>
+                            <p>
+                                Your paycheck will be automatically deposited up to two days early
+                            </p>
+                            <button>Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Happiness -->
+
+
+
+            <!-- Calistus -->
+
+            <section style="background: #e1f5fe; padding: 5em 0;">
+                <div class="customer">
+                    <div class="wow animated fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
+                        <s class="s1 gem"
+                            style="background-position: -100px 10px; top: 90%; left: 40%; width: 42px;"></s>
+                        <s class="s2 gem"
+                            style="background-position: -100px 3px; top: 90%; left: 60%; height: 40px; width: 43px;"></s>
+                        <s class="s3 gem"
+                            style="background-position: -102px 3px; top: 60%; left: 18%; height: 40px;"></s>
+                        <s class="s4 gem"
+                            style="background-position: -100px 0px; top: 60%; left: 79%; width: 44px; height: 36px;"></s>
+                        <s class="s5 gem"
+                            style="background-position: -100px 10px; top: 20%; left: 79%; width: 44px; height: 47px;"></s>
+                        <s class="s6 gem"
+                            style="background-position: -100px 10px; top: 20%; left: 18%; width: 44px; height: 43px;"></s>
+                        <s class="s7 gem"
+                            style="background-position: -100px 0px; top: 5%; left: 60%; height: 36px; width: 44px;"></s>
+                        <s class="s8 gem"
+                            style="background-position: -100px 4px; top: 5%; left: 38%; height: 42px; width: 44px;"></s>
+                    </div>
+                    <h2>Customer Service
+                        <br>
+                        on Your Terms</h2>
+                </div>
+            </section>
+
+            <section style="display: flex; justify-content: space-evenly; flex-wrap: wrap; background: #e1f5fe; padding: 15em 0;">
+                <div style="margin: 1em;">
+                    <div class="image-fixed">
+                        <img style="width: 100%;" id="imgSrc"
+                            src="https://res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png" />
+                    </div>
+                </div>
+                <div class="feature-list">
+                    <div class="features" style="display: flex;"
+                        onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/1_2x_o6dotq.png')">
+                        <p>Real-time alerts &nbsp; <s class="e-alarm"></s> &nbsp; next day settlement</p>
+                    </div>
+                    <div class="features"
+                        onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/2_2x_rgwtkv.png')">
+                        <p>Flexible billing &nbsp; <s class="e-book"></s> &nbsp; and payments</p>
+                    </div>
+                    <div class="features"
+                        onclick="changeImage('https:res.cloudinary.com/cdacs/image/upload/v1572468918/Wickret%20Assets/3_2x_prguya.png')">
+                        <p>Banking for all &nbsp; <s class="e-darts"></s> &nbsp; personal, business</p>
+                    </div>
+                    <!-- <ol>
                 <li>Real-time alerts
                     <br>
                     next day settlement</li>
@@ -210,98 +211,129 @@
                     <br>
                     personal, business</li>
             </ol> -->
-        </div>
-    </section>
-    <section style="padding: 5em 0">
-        <div class="">
-            <div class="container">
-                <div class="security-header">
-                    <h2>Security</h2>
                 </div>
-                <div class="security-details">
-                    <div style="width: 460px;">
-                        <p style="font-size: 1.5em; color: #2128bd; line-height: 1.5;"><span style="font-weight: 600">Superior Security.</span> Security and fraud prevention is at the core of our business.</p>
+            </section>
+            <section style="padding: 5em 0">
+                <div class="">
+                    <div class="container">
+                        <div class="security-header">
+                            <h2>Security</h2>
+                        </div>
+                        <div class="security-details">
+                            <div style="width: 460px;">
+                                <p style="font-size: 1.5em; color: #2128bd; line-height: 1.5;"><span
+                                        style="font-weight: 600">Superior Security.</span> Security and fraud prevention
+                                    is at the core of our business.</p>
+                            </div>
+                            <div style="width: 470px;">
+                                <p style="font-size: 1.5em; color: #2128bd; line-height: 1.5;"><span
+                                        style="font-weight: 600">Fraud Protection.</span> Our fraud tools can help your
+                                    business minmize lost sales</p>
+                            </div>
+                        </div>
                     </div>
-                    <div style="width: 470px;">
-                        <p style="font-size: 1.5em; color: #2128bd; line-height: 1.5;"><span style="font-weight: 600">Fraud Protection.</span> Our fraud tools can help your business minmize lost sales</p>
+                </div>
+            </section>
+            <section class="container-fluid routing">
+                <div class="wow animated fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
+                    <s class="s1 randoms" style="background-position: -140px 3px; top: 75%; left: 40%;"></s>
+                    <s class="s2 randoms"
+                        style="background-position: -98px -37px; top: 75%; left: 60%; height: 40px; width: 43px;"></s>
+                    <s class="s3 randoms"
+                        style="background-position: -140px -44px; top: 65%; left: 18%; height: 40px;"></s>
+                    <s class="s4 randoms"
+                        style="background-position: 0px -74px; top: 65%; left: 80%; width: 47px; height: 36px;"></s>
+                    <s class="s5 randoms"
+                        style="background-position: -140px 3px; top: 30%; left: 80%; width: 47px; height: 47px;"></s>
+                    <s class="s6 randoms"
+                        style="background-position: -96px -34px; top: 30%; left: 18%; width: 47px; height: 43px;"></s>
+                    <s class="s7 randoms"
+                        style="background-position: 2px -74px; top: 18%; left: 60%; height: 36px; width: 50px;"></s>
+                    <s class="s8 randoms"
+                        style="background-position: -140px -44px; top: 18%; left: 38%; height: 42px; width: 50px;"></s>
+                </div>
+                <div class="header">
+                    <h2>A powerful routing<br>and payout engine</h2>
+                </div>
+            </section>
+
+            <!-- Calistus -->
+
+
+
+            <!-- Khalil -->
+
+            <div class="container-fluid" style="margin: 0; padding: 0;">
+                <div class="description container-fluid">
+                    <div class="container">
+                        <div class="description-container row">
+                            <div class="description-text col-md-4">
+                                <h2>Borderless Account</h2>
+                                <p>Receive money with international bank details, track your transactions.</p>
+                            </div>
+
+                            <div class="description-image col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="background-color: #ECF1FD">
+                    <div class="container-fluid text-center" id="" style="padding: 15em 0 2em;">
+                        <h3 class="display-5 pb-4 my-4">Download the app <br>to get
+                            started</h3>
+                        <div class="getapp">
+                            <button class="button button4" disabled>
+                                <img id="store-logo" src="img/apple-logo.png">
+                                <span class="btn-text">Soon on <br><strong>App Store</strong></span>
+                            </button>
+                        </div>
+                        <div class="getapp">
+                            <button class="button button4" disabled>
+                                <img id="store-logo" src="img/google-play.png">
+                                <span class="btn-text">Soon on <br><strong>Google Play</strong></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container-fluid py-5 mt-4 footer">
+                        <img src="img/cuberto.png">
+                        <a href="https://cuberto.com/">Design & Development</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container-fluid fees">
-        <div class="wow animated fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
-            <s class="s1 randoms" style="background-position: -140px 3px; top: 75%; left: 40%;"></s>
-            <s class="s2 randoms" style="background-position: -98px -37px; top: 75%; left: 60%; height: 40px; width: 43px;"></s>
-            <s class="s3 randoms" style="background-position: -140px -44px; top: 65%; left: 18%; height: 40px;"></s>
-            <s class="s4 randoms" style="background-position: 0px -74px; top: 65%; left: 80%; width: 47px; height: 36px;"></s>
-            <s class="s5 randoms" style="background-position: -140px 3px; top: 30%; left: 80%; width: 47px; height: 47px;"></s>
-            <s class="s6 randoms" style="background-position: -96px -34px; top: 30%; left: 18%; width: 47px; height: 43px;"></s>
-            <s class="s7 randoms" style="background-position: 2px -74px; top: 18%; left: 60%; height: 36px; width: 50px;"></s>
-            <s class="s8 randoms" style="background-position: -140px -44px; top: 18%; left: 38%; height: 42px; width: 50px;"></s>
-        </div>
-        <div class="header">
-            <h2>A powerful routing<br>and payout engine</h2>
-        </div>
+
     </section>
 
-<!-- Calistus -->
 
+    <!-- Khalil -->
 
+    <script type="text/javascript">
+        function changeImage(imgName) {
+            image = document.getElementById("imgSrc");
+            image.src = imgName;
+        }
+    </script>
 
-<!-- Khalil -->
-
-<div class="container-fluid" style="margin: 0; padding: 0;">
-  <div class="description container-fluid">
-    <div class="container">
-    <div class="description-container row">
-        <div class="description-text col-md-4">
-            <h2>Borderless Account</h2>
-            <p>Receive money with international bank details, track your transactions.</p>
-        </div>
-
-        <div class="description-image col-md-6">
-        </div>
-    </div>
-  </div>
-  </div>
-
-
-  <div style="background-color: #ECF1FD">
-  <div class="container-fluid text-center" id="" style="padding: 15em 0 2em;">
-    <h1 class="display-5 pb-4 my-4" style="letter-spacing: -4.18px;">Download the app <br>to get started</h1>
-    <div class="getapp">
-        <button class="button button4" disabled>
-           <img id="store-logo" src="img/apple-logo.png">
-           <span class="btn-text">Soon on <br><strong>App Store</strong></span>
-            </button>
-    </div>
-    <div class="getapp">
-        <button class="button button4" disabled>
-           <img id="store-logo" src="img/google-play.png">
-           <span class="btn-text">Soon on <br><strong>Google Play</strong></span>
-            </button>
-    </div>
-  </div>
-  <div class="container-fluid py-5 mt-4 footer">
-       <img src="img/cuberto.png">
-       <a href="https://cuberto.com/">Design & Development</a>
-  </div>
-  </div>
-</div>
-        
-    </section>
-    
-
-<!-- Khalil -->
-
-<script type="text/javascript">
-    function changeImage(imgName) {
-      image = document.getElementById("imgSrc");
-      image.src = imgName;
-    }
-  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.btnn').click(function() {
+            $('.btnn').toggleClass('active');
+            $('.navigation').toggleClass('active');
+          });
+        });
+    </script>
+    <script>
+        function toggleBar(x) {    
+            x.classList.toggle("change");
+        }
+    </script>
+    <script src="js/app.js"></script>
 
 </body>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 
 </html>

@@ -50,7 +50,7 @@ body {
 }
 
 .features {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 600;
   margin-bottom: 30px;
   text-shadow: none;
@@ -64,13 +64,19 @@ body {
   line-height: 55px;
 }
 
+.features p {
+  position: relative;
+  font-size: 1.6em;
+  cursor: default;
+}
+
 .features:hover {
   color: #2128bd;
   opacity: 1;
 }
 
 .security-header {
-  margin: 12em 0;
+  margin: 15em 0;
 }
 
 .security-header h2 {
@@ -90,10 +96,10 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 16em 0 5em;
+  margin: 20em 0 5em;
 }
 
-.container-fluid.fees {
+.container-fluid.routing {
   margin: 0;
   padding: 0;
   position: relative;
@@ -101,12 +107,12 @@ body {
   background-color: #fdf0e5;
 }
 
-.fees .header {
+.routing .header {
   margin: 20em auto;
   color: #2128bd;
 }
 
-.fees .header h2 {
+.routing .header h2 {
   text-align: center;
   font-weight: 600;
   font-size: 4.5rem;
@@ -114,7 +120,7 @@ body {
   line-height: 1.1;
 }
 
-.fees .header p {
+.routing .header p {
   text-align: center;
   font-size: 1.7em;
   letter-spacing: -1px;
@@ -129,4 +135,61 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+}
+
+@media (max-width: 1024px) {
+.customer h2 {
+    font-size: 4em;
+    letter-spacing: -4px;
+  }
+
+  .routing .header h2 {
+    font-size: 4em;
+    letter-spacing: -5px;
+  }
+}
+
+@media (max-width: 768px) {
+.customer h2 {
+    padding: 4.5em 0;
+    font-size: 3.3em;
+    letter-spacing: -3.6px;
+  }
+
+  .routing .header h2 {
+    font-size: 3.6em;
+    letter-spacing: -4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .customer {
+    padding: 12.5em 0;
+  }
+
+  .customer h2 {
+    font-size: 2.9em;
+    letter-spacing: -2px;
+  }
+
+  .routing .header h2 {
+    font-size: 2.6em;
+    letter-spacing: -2.3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .customer {
+
+  }
+
+    .customer h2 {
+    font-size: 2.3em;
+    letter-spacing: -2px;
+  }
+
+  .routing .header h2 {
+    font-size: 2.2em;
+    letter-spacing: -1.9px;
+  }
 }

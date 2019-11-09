@@ -20,6 +20,12 @@ body {
   transform: rotate(-90deg);
   -webkit-transform-origin: center calc(50vh);
   transform-origin: center calc(50vh);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container1::-webkit-scrollbar {
+  display: none;
 }
 
 .child {
@@ -50,7 +56,7 @@ body {
 
 .child p {
   line-height: 1.5;
-  font-size: 1.6em;
+  font-size: 1.7em;
   font-weight: 500;
 }
 
@@ -112,22 +118,31 @@ h2 {
   font-weight: 700;
 }
 .e-alarm {
-  background-image: url("img/sprites.png");
+  background-image: url(img/sprites.png);
   background-position: -77px -76px;
-  width: 25px;
-  height: 28px;
-}
-.e-book {
-  background-image: url("img/sprites.png");
-  background-position: 0 -109px;
   width: 24px;
   height: 29px;
+  position: absolute;
+  top: 16px;
+  right: 72px;
+}
+.e-book {
+  background-image: url(img/sprites.png);
+  background-position: 3px -106px;
+  width: 32px;
+  height: 35px;
+  position: absolute;
+  top: 16px;
+  right: 89px;
 }
 .e-darts {
-  background-image: url("img/sprites.png");
-  background-position: -48px -76px;
-  width: 28px;
-  height: 28px;
+  background-image: url(img/sprites.png);
+  background-position: -224px -76px;
+  width: 30px;
+  height: 29px;
+  position: absolute;
+  top: 16px;
+  right: 92px;
 }
 .link {
   font-size: 40px;
@@ -137,13 +152,20 @@ h2 {
   margin: 1em 0;
 }
 .feature-list {
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  margin: 1em;
 }
 .image-fixed {
   width: 400px;
   height: 400px;
 }
+
+.description-items {
+  display: inline-block;
+  width: 22em;
+  margin: 0 2em;
+}
+
 .description-items button {
   height: 60px;
   padding: 0 39px;
